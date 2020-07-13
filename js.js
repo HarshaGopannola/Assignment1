@@ -1,0 +1,13 @@
+let btnShow = document.querySelector('button');
+let output = document.quertSelector('h1');
+btnShow.addEventListener('click', () => {
+     let today = new Date();
+
+     let month = today.getMonth() + 1;
+     let year = today.getFullYear();
+     let date = today.getDate();
+
+     let current_date = '${month}/${date}/${year}';
+     output.innerText = current_date;
+
+});
